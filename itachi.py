@@ -88,23 +88,23 @@ while True:
         os.startfile(codePath)
 
     elif 'english channel' in query:
-        webbrowser.open("https://www.youtube.com/c/linguamarina")
+        webbrowser.open("youtube.com\\c\\linguamarina")
 
     elif 'anime channel' in query:
-        webbrowser.open("https://www.youtube.com/channel/UC05rtdBdXrK5syEvDBFGHkA")
+        webbrowser.open("youtube.com\\channel\\UC05rtdBdXrK5syEvDBFGHkA")
 
     elif 'concert channel' in query:
-        webbrowser.open("https://www.youtube.com/user/CapitalFMOfficial")
-
+        webbrowser.open("youtube.com\\user\\CapitalFMOfficial")
+        
     elif 'play' in query:
         i = query.index('play')
         query = query.replace(query[:i + 6], '')
         query = query.replace(" ", "+")
-        qu = 'https://www.youtube.com/results?search_query=' + query
+        qu = 'youtube.com\\results?search_query=' + query
         webbrowser.open(qu)
 
     elif 'github' in query:
-        webbrowser.open("https://github.com")
+        webbrowser.open("github.com")
 
     elif 'quit' in query:
         speak("Bye sir, have a good day.")
